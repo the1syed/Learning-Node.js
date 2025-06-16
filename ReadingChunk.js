@@ -51,6 +51,10 @@ const server = http.createServer((req, res) => {
     req.on("data", (chunk) =>{
         console.log(chunk);
     })
+    fs.writeSync("user-details.txt", "John Doe2");
+    res.setHeader("Location", "/");
+    res.statusCode = 302;
+    return res.end();
   } else {
     res.setHeader("Content-Type", "text/html");
     res.statusCode = 404;
