@@ -42,6 +42,7 @@ const server = http.createServer((req, res) => {
             for(const [key, value] of params.entries()){
                 jsonObject[key] = value;
             }
+            // const jsonObject = Object.fromEntries(params);
             console.log(jsonObject);
         });
         fs.writeFileSync("user-details.txt", "John Doe3");
