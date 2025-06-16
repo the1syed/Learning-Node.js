@@ -36,6 +36,6 @@ Feel free to suggest improvements or corrections!
 
 ## 🔗 Connect with Me
 
-- [LinkedIn](https://www.linkedin.com/in/syed-raza-ali/)  
+- [LinkedIn](https://www.linkedin.com/in/syed-raza-ali-cs/)  
 - [GitHub](https://github.com/the1syed)
 
