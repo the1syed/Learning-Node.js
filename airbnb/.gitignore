@@ -1,0 +1,19 @@
+# Ignore node modules
+node_modules/
+
+# Ignore logs
+*.log
+npm-debug.log*
+
+# Ignore dotenv config
+.env
+
+# OS-specific
+.DS_Store
+
+# IDE/editor configs
+.vscode/
+.idea/
+
+# Ignore package-lock backup (if any)
+package-lock.json.backup
