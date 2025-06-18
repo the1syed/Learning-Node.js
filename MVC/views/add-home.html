@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Home to airBnB</title>
+    <link href="/output.css" rel="stylesheet"/>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center px-4">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-red-500 text-center">Register Your Home</h1>
+      <p class="text-gray-600 text-center mt-2">Fill out the form below to list your property</p>
+    </header>
+
+    <main class="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
+      <form action="/host/add-home" method="POST" class="space-y-6">
+        <div>
+          <label for="houseName" class="block mb-2 text-sm font-medium text-gray-700">House Name</label>
+          <input 
+            type="text" 
+            id="houseName" 
+            name="houseName" 
+            placeholder="e.g. Cozy Mountain Cabin"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+          />
+          <input 
+            type="text" 
+            id="pricePerNight" 
+            name="pricePerNight" 
+            placeholder="e.g. ₹ 5500"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+          />
+          <input 
+            type="text" 
+            id="location" 
+            name="location" 
+            placeholder="e.g. Noida"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+          />
+          <input 
+            type="text" 
+            id="rating" 
+            name="rating" 
+            placeholder="Out of 5"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+          />
+          <input 
+            type="text" 
+            id="image" 
+            name="image" 
+            placeholder="Put your image here"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+          />
+        </div>
+        <div class="text-center">
+          <button 
+            type="submit" 
+            class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition">
+            Add Home
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
